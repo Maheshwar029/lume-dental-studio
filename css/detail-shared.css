@@ -1,0 +1,1 @@
+.detail-split,.detail-photo-band,.detail-bottom{transition:opacity .6s ease,transform .6s ease}.detail-split:not(.in-view),.detail-photo-band:not(.in-view),.detail-bottom:not(.in-view){opacity:.35;transform:translateY(18px)}.detail-split.in-view,.detail-photo-band.in-view,.detail-bottom.in-view{opacity:1;transform:none}

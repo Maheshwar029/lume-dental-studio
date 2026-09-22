@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll(".location-cards .clinic-card").forEach(card=>card.addEventListener("click",()=>{document.querySelectorAll(".location-cards .clinic-card").forEach(x=>x.classList.remove("is-selected"));card.classList.add("is-selected")})));

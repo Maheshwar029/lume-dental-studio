@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const input=document.getElementById("citySearch");input?.addEventListener("input",e=>{const q=e.target.value.toLowerCase().trim();document.querySelectorAll(".cities button").forEach(b=>b.hidden=!b.textContent.toLowerCase().includes(q))})});

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll(".doctor-grid.full a[href*='booking']").forEach(a=>a.addEventListener("click",()=>sessionStorage.setItem("preferredDoctor",a.textContent.replace("Book with ","").trim()))));

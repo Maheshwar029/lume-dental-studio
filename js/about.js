@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll(".experience-image img").forEach(img=>img.addEventListener("load",()=>img.classList.add("loaded"))));

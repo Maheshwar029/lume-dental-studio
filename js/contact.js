@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelector(".contact-form")?.addEventListener("submit",()=>window.scrollTo({top:document.querySelector(".contact-form").offsetTop-80,behavior:"smooth"})));

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll(".treatment-feature").forEach(card=>card.addEventListener("keydown",e=>{if(e.key==="Enter")card.click()})));
