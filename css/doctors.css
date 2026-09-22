@@ -1,1 +1,36 @@
-.doctor-page{background:#fff}.doctor-grid.full{grid-template-columns:repeat(3,1fr);gap:28px}.doctor-grid.full article{border:0;border-radius:0;background:var(--cream)}.doctor-grid.full img{height:390px;filter:saturate(.9)}.doctor-grid.full article>div{padding:26px}.doctor-grid.full article>div p:nth-of-type(2){margin:15px 0 20px;line-height:1.65}.doctor-grid.full .btn{margin-top:8px}@media(max-width:1000px){.doctor-grid.full{grid-template-columns:1fr 1fr}}@media(max-width:700px){.doctor-grid.full{grid-template-columns:1fr}.doctor-grid.full img{height:360px}}
+/* DOCTORS PAGE — editorial profiles rather than generic cards */
+.doctor-hero{display:grid;grid-template-columns:1.02fr .98fr;min-height:610px;background:var(--cream)}
+.doctor-hero-copy{padding:90px 10%;display:flex;flex-direction:column;justify-content:center}
+.doctor-hero-copy label,.doctor-intro label,.doctor-profile-copy label,.doctor-cta label{font-size:11px;letter-spacing:1.8px;color:var(--green);font-weight:800}
+.doctor-hero h1{font:800 clamp(48px,6vw,78px)/.98 Manrope;letter-spacing:-3.5px;margin:15px 0 24px}
+.doctor-hero h1 span{color:var(--green)}
+.doctor-hero-copy>p{font-size:18px;color:var(--muted);max-width:580px;line-height:1.65}
+.doctor-hero-actions{display:flex;align-items:center;gap:24px;margin-top:25px}
+.doctor-hero-photo{position:relative;min-height:610px;overflow:hidden}
+.doctor-hero-photo img{width:100%;height:100%;object-fit:cover}
+.doctor-hero-note{position:absolute;left:28px;bottom:28px;background:#fff;padding:18px 22px;border-radius:9px;box-shadow:0 15px 40px #0002;display:flex;flex-direction:column}
+.doctor-hero-note b{font:800 22px Manrope}.doctor-hero-note span{font-size:12px;color:var(--muted)}
+.doctor-intro{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.doctor-intro h2{font:800 clamp(34px,4vw,52px)/1.08 Manrope;letter-spacing:-1.7px;margin:12px 0}
+.doctor-intro>p{color:var(--muted);font-size:16px;line-height:1.8;max-width:600px}
+.doctor-team{border-top:1px solid var(--line)}
+.doctor-profile{display:grid;grid-template-columns:1fr 1fr;min-height:610px;border-bottom:1px solid var(--line)}
+.doctor-profile.reverse .doctor-profile-photo{order:2}.doctor-profile.reverse .doctor-profile-copy{order:1}
+.doctor-profile-photo{overflow:hidden;background:var(--mint)}
+.doctor-profile-photo img{width:100%;height:100%;min-height:610px;object-fit:cover;transition:transform .7s ease}
+.doctor-profile:hover .doctor-profile-photo img{transform:scale(1.025)}
+.doctor-profile-copy{padding:75px 11%;display:flex;flex-direction:column;justify-content:center;position:relative}
+.doctor-number{font:800 13px Manrope;color:#9aa9ad;margin-bottom:45px}
+.doctor-profile-copy h2{font:800 clamp(35px,4vw,54px)/1.05 Manrope;letter-spacing:-1.8px;margin:12px 0 6px}
+.doctor-credentials{font-size:13px;color:var(--green);font-weight:800;margin:0 0 20px}
+.doctor-profile-copy>p:not(.doctor-credentials){color:var(--muted);font-size:15px;line-height:1.8;max-width:560px}
+.doctor-focus{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 26px;max-width:570px}
+.doctor-focus b{width:100%;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ink);margin-bottom:3px}
+.doctor-focus span{border:1px solid var(--line);background:#fff;padding:8px 11px;border-radius:30px;font-size:11px;color:var(--muted)}
+.doctor-profile-copy .btn{align-self:flex-start}
+.doctor-cta{margin:90px 8%;padding:48px 52px;background:var(--blue);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.doctor-cta h2{font:800 clamp(30px,3.5vw,45px)/1.1 Manrope;letter-spacing:-1.3px;max-width:700px;margin:9px 0 12px}
+.doctor-cta p{color:#c6d5da;max-width:650px;margin:0}
+.doctor-cta .btn{white-space:nowrap}
+@media(max-width:1000px){.doctor-hero,.doctor-profile{grid-template-columns:1fr}.doctor-hero-photo{min-height:500px}.doctor-profile.reverse .doctor-profile-photo{order:initial}.doctor-profile.reverse .doctor-profile-copy{order:initial}.doctor-profile-photo img{min-height:500px}.doctor-intro{gap:45px}.doctor-profile-copy{padding:60px 8%}}
+@media(max-width:700px){.doctor-hero-copy{padding:58px 20px}.doctor-hero h1{letter-spacing:-2.5px}.doctor-hero-copy>p{font-size:16px}.doctor-hero-actions{align-items:flex-start;flex-direction:column;gap:16px}.doctor-hero-photo{min-height:360px}.doctor-hero-note{left:15px;bottom:15px}.doctor-intro{grid-template-columns:1fr;gap:25px}.doctor-profile-photo img{min-height:390px;height:390px}.doctor-profile-copy{padding:42px 20px 52px}.doctor-number{margin-bottom:30px}.doctor-profile-copy h2{font-size:36px}.doctor-cta{margin:60px 20px;padding:32px 24px;align-items:flex-start;flex-direction:column}.doctor-cta .btn{width:100%}}
