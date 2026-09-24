@@ -40,3 +40,20 @@
 .home-booking-cta p{margin:0;color:#d9e6e9;max-width:610px;font-size:14px;line-height:1.6}
 .home-booking-cta .btn{flex:none}
 @media(max-width:700px){.home-booking-cta{width:calc(100% - 40px);margin-bottom:55px;padding:34px 24px;display:block}.home-booking-cta .btn{margin-top:24px;width:100%}}
+
+/* Homepage dental concern discovery */
+.concerns{background:var(--cream)}
+.concerns-lead{max-width:720px;margin:-4px 0 30px;color:var(--muted);font-size:15px;line-height:1.65}
+.concern-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.concern-grid a{display:grid;grid-template-columns:42px 1fr 20px;gap:18px;align-items:center;padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ink);transition:background .25s,transform .25s}
+.concern-grid a:hover{background:#fff;transform:translateY(-2px)}
+.concern-grid a>span{font-size:10px;color:var(--green);font-weight:800;letter-spacing:1px}
+.concern-grid b{display:block;font:700 18px Manrope}
+.concern-grid small{display:block;margin-top:5px;color:var(--muted);font-size:12px;line-height:1.45}
+.concern-grid strong{font-size:20px;font-weight:500;color:var(--green)}
+.home-booking-cta-shell{padding:52px max(20px,8%);background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.home-booking-cta-shell label{font-size:10px;letter-spacing:1.8px;font-weight:800;color:#a8d7ca}
+.home-booking-cta-shell h2{font:800 clamp(30px,3.3vw,44px)/1.08 Manrope;letter-spacing:-1.4px;margin:9px 0 12px;max-width:700px}
+.home-booking-cta-shell p{margin:0;color:#d9e6e9;font-size:14px;line-height:1.6;max-width:620px}
+.home-booking-cta-shell .btn{flex:none}
+@media(max-width:700px){.concerns-lead{font-size:14px}.concern-grid{grid-template-columns:1fr}.concern-grid a{padding:20px}.home-booking-cta-shell{display:block;padding:38px 20px}.home-booking-cta-shell .btn{display:flex;margin-top:24px;width:100%;justify-content:center}}
