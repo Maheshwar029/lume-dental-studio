@@ -21,15 +21,32 @@ document.addEventListener("DOMContentLoaded",()=>{
    });
  });
 });
+
 function updateSchedule(card){
  const band=document.querySelector(".clinic-schedule"); if(!band||!card)return;
  const isGurgaon=card.dataset.location.includes("gurugram");
  const label=band.querySelector(".schedule-copy label");
- const title=band.querySelector(".schedule-panel-head span");
- const rows=[...band.querySelectorAll(".schedule-row b")];
- const address=band.querySelector(".schedule-copy>p");
+ const address=band.querySelector(".schedule-details a:nth-child(1) b");
+ const phone=band.querySelector(".schedule-details a:nth-child(2) b");
+ const email=band.querySelector(".schedule-details a:nth-child(3) b");
  const directions=band.querySelector(".schedule-location-link");
- if(isGurgaon){label.textContent="GURUGRAM · GOLF COURSE ROAD";title.textContent="Gurugram";address.textContent="Sector 54, Golf Course Road, Gurugram, Haryana. Visit the clinic, call the care team or request an appointment online.";directions.href="https://maps.google.com/?q=Golf+Course+Road+Gurugram";}
- else{label.textContent="GREATER KAILASH II · NEW DELHI";title.textContent="Greater Kailash II";address.textContent="Visit the clinic, call the care team or request an appointment online. Our team can help with treatment questions before your visit.";directions.href="https://maps.google.com/?q=Greater+Kailash+II+New+Delhi";}
- rows.forEach(r=>r.textContent="9:00 AM – 8:00 PM");
+ const map= document.querySelector(".clinic-map-wide iframe");
+ const overlay=band.nextElementSibling?.querySelector(".map-wide-overlay");
+ if(isGurgaon){
+   label.textContent="FIND US · GURUGRAM";
+   address.innerHTML="Sector 54, Golf Course Road<br>Gurugram, Haryana";
+   phone.textContent="+91 11 4000 1234";
+   email.textContent="care@lumedentalcare.in";
+   directions.href="https://maps.google.com/?q=Golf+Course+Road+Gurugram";
+   if(map) map.src="https://www.google.com/maps?q=Golf+Course+Road+Gurugram&output=embed";
+   if(overlay){overlay.querySelector("b").textContent="LUMÉ Dental Care · Gurugram";overlay.querySelector("small").textContent="Sector 54, Golf Course Road, Gurugram";overlay.querySelector("a").href=directions.href;}
+ }else{
+   label.textContent="FIND US";
+   address.innerHTML="F-12, Greater Kailash II<br>New Delhi, 110048";
+   phone.textContent="+91 11 4000 1234";
+   email.textContent="care@lumedentalcare.in";
+   directions.href="https://maps.google.com/?q=Greater+Kailash+II+New+Delhi";
+   if(map) map.src="https://www.google.com/maps?q=Greater+Kailash+II+New+Delhi&output=embed";
+   if(overlay){overlay.querySelector("b").textContent="LUMÉ Dental Care · GK II";overlay.querySelector("small").textContent="F-12, Greater Kailash II, New Delhi 110048";overlay.querySelector("a").href=directions.href;}
+ }
 }

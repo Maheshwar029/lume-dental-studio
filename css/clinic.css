@@ -41,3 +41,51 @@
 .schedule-copy label{font-size:10px;letter-spacing:1.7px;font-weight:800;color:#eadcf0}.schedule-copy h2{font:800 clamp(34px,4.3vw,56px)/1.02 Manrope;letter-spacing:-2px;margin:12px 0 16px}.schedule-copy>p{max-width:560px;color:#f0e8f3;font-size:14px;line-height:1.7}.schedule-contact{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:24px 0 25px;max-width:560px}.schedule-contact a{display:flex;gap:10px;align-items:center;color:#fff;border:1px solid #ffffff30;background:#ffffff0d;padding:10px;border-radius:4px}.schedule-contact span{width:28px;height:28px;display:grid;place-items:center;background:#ffffff18;border-radius:4px}.schedule-contact b,.schedule-contact small{display:block}.schedule-contact b{font-size:11px}.schedule-contact small{font-size:9px;color:#e1d4e6;margin-top:2px}.schedule-actions{display:flex;align-items:center;gap:20px}.schedule-actions .light{background:#fff;color:#5e3178;border-color:#fff}.schedule-location-link{font-size:12px;font-weight:800;color:#fff}.schedule-panel{border:1px solid #ffffff35;border-radius:5px;padding:14px 17px;background:#ffffff08}.schedule-panel-head{display:flex;justify-content:space-between;padding:0 0 8px;color:#f4eaf6;font-size:9px;letter-spacing:1px;text-transform:uppercase}.schedule-panel-head span{font-size:9px;letter-spacing:0;text-transform:none;color:#e0d2e5}.schedule-row{display:flex;justify-content:space-between;border-top:1px solid #ffffff35;padding:8px 0;font-size:10px}.schedule-row b{font-size:9px}.schedule-note{border-top:1px solid #ffffff35;padding-top:11px;margin-top:2px;display:grid;grid-template-columns:75px 1fr;gap:8px;font-size:8px;color:#eadff0}.schedule-note b{font-size:8px;color:#fff}.clinic-map-wide{height:390px;position:relative;background:#dbe5e7;overflow:hidden}.clinic-map-wide iframe{width:100%;height:100%;border:0;filter:saturate(.9)}.map-wide-overlay{position:absolute;left:5%;bottom:24px;background:#fff;padding:13px 15px;box-shadow:0 12px 30px #0002;display:flex;align-items:center;gap:12px;max-width:480px}.map-wide-overlay>span{font-size:22px;color:var(--green)}.map-wide-overlay b,.map-wide-overlay small{display:block}.map-wide-overlay b{font-size:12px}.map-wide-overlay small{font-size:9px;color:var(--muted);margin-top:2px}.map-wide-overlay a{font-size:10px;color:var(--green);font-weight:800;margin-left:auto;white-space:nowrap}.clinic-footer{background:#071c38}.clinic-footer .footer-links{grid-template-columns:1fr 1fr 1fr 1fr}.clinic-footer .footer-links b{font-size:9px;letter-spacing:1.3px;color:#a9bac9}.clinic-footer .footer-links a,.clinic-footer .footer-links span{font-size:11px}.clinic-footer .copyright{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-socials{letter-spacing:2px;color:#90a6b5!important}
 @media(max-width:1000px){.clinic-schedule{grid-template-columns:1fr;gap:45px;padding:60px 7%}.clinic-map-wide{height:350px}.clinic-footer .footer-links{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.clinic-schedule{padding:48px 20px}.schedule-contact{grid-template-columns:1fr}.schedule-actions{align-items:flex-start;flex-direction:column;gap:13px}.schedule-actions .btn{width:100%}.schedule-panel{padding:12px}.schedule-row{padding:9px 0}.schedule-note{grid-template-columns:1fr}.clinic-map-wide{height:360px}.map-wide-overlay{left:15px;right:15px;bottom:15px;max-width:none;display:grid;grid-template-columns:28px 1fr}.map-wide-overlay a{grid-column:2;margin-left:0}.clinic-footer .footer-links{grid-template-columns:1fr 1fr}.clinic-footer .copyright{align-items:flex-start;flex-direction:column;gap:10px}}
+
+/* Bethesda-inspired location schedule and footer refinement */
+.clinic-schedule{background:#7b3f99;color:#fff;display:grid;grid-template-columns:.98fr 1.02fr;gap:54px;padding:28px 4.8%;min-height:295px;align-items:center}
+.schedule-copy{min-width:0}
+.schedule-copy label{display:block;font-size:8px;letter-spacing:1.8px;font-weight:800;color:#eadcf0;margin-bottom:6px}
+.schedule-copy h2{font:800 clamp(28px,3vw,42px)/.98 Manrope;letter-spacing:2.5px;margin:0 0 8px;max-width:520px}
+.schedule-lede{font-size:10px;line-height:1.45;color:#f1e9f4;max-width:510px;margin:0 0 13px}
+.schedule-details{display:grid;grid-template-columns:1.15fr 1fr;gap:7px 18px;max-width:540px}
+.schedule-details a{display:flex;align-items:center;gap:8px;color:#fff;min-width:0}
+.detail-icon{width:21px;height:21px;flex:0 0 21px;border-radius:4px;background:#ffffff18;display:grid;place-items:center;font-size:10px}
+.schedule-details small{display:block;font-size:6px;letter-spacing:1px;color:#d9c9df;margin-bottom:2px}
+.schedule-details b{display:block;font-size:8px;line-height:1.2}
+.schedule-actions{display:flex;align-items:center;gap:9px;margin-top:13px}
+.schedule-actions .light{background:#fff;color:#6a3186;border-color:#fff;font-size:8px;padding:9px 13px;text-transform:none}
+.schedule-location-link{font-size:8px;font-weight:800;color:#fff;border:1px solid #ffffff60;border-radius:3px;padding:8px 12px}
+.schedule-panel{border:1px solid #ffffff35;border-radius:6px;padding:11px 14px;background:#ffffff08;max-width:565px;justify-self:stretch}
+.schedule-panel-head{padding:0 0 7px;color:#f4eaf6;font-size:7px;letter-spacing:1.1px;text-transform:uppercase}
+.schedule-panel-head span{display:none}
+.schedule-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff42;padding:6px 0;font-size:8px;color:#eadff0}
+.schedule-row b{font-size:7px;color:#fff}
+.schedule-insurance{border-top:1px solid #ffffff42;margin-top:3px;padding-top:9px}
+.schedule-insurance small{display:block;font-size:6px;letter-spacing:1px;color:#d9c9df;margin-bottom:2px}
+.schedule-insurance span{display:block;font-size:7px;color:#eee5f1}
+.clinic-map-wide{height:225px}
+.map-wide-overlay{left:4.8%;bottom:15px;padding:10px 12px;gap:9px}
+.map-wide-overlay>span{font-size:18px}
+.map-wide-overlay b{font-size:10px}
+.map-wide-overlay small{font-size:8px}
+.map-wide-overlay a{font-size:8px}
+.clinic-footer{background:#071c38;padding:27px 4.8% 13px}
+.practice-footer-top{display:grid;grid-template-columns:1.25fr 1.1fr 1fr 1.25fr;gap:42px;padding-bottom:18px}
+.practice-brand{display:flex;flex-direction:column;align-items:flex-start}
+.practice-brand>strong{font:800 12px Manrope;color:#fff;letter-spacing:-.2px}
+.practice-brand>span{font-size:6px;letter-spacing:1px;color:#a7bac9;margin-top:2px}
+.practice-brand p{font-size:8px;line-height:1.45;color:#9fb2bf;max-width:220px;margin:7px 0}
+.practice-brand small{font-size:7px;color:#c1cfd6}
+.footer-column{display:flex;flex-direction:column;gap:6px}
+.footer-column>b{font-size:7px;letter-spacing:1px;color:#9eb2c2;margin-bottom:4px}
+.footer-column>a,.footer-column>span{font-size:8px;line-height:1.25;color:#a9bac7}
+.footer-column a:hover{color:#fff}
+.footer-contact{gap:9px}
+.footer-contact span{display:block}
+.footer-contact small{display:block;font-size:6px;letter-spacing:1px;color:#7890a4;margin-bottom:2px}
+.footer-contact strong{display:block;font-size:7px;line-height:1.25;color:#fff;font-weight:600}
+.clinic-footer .copyright{border-top:1px solid #ffffff14;padding-top:11px;font-size:7px;color:#71889b;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.footer-socials{color:#8fa6b8!important}
+@media(max-width:1000px){.clinic-schedule{grid-template-columns:1fr;gap:28px;padding:40px 7%}.schedule-panel{max-width:none}.practice-footer-top{grid-template-columns:1fr 1fr;gap:30px}.clinic-map-wide{height:280px}}
+@media(max-width:700px){.clinic-schedule{padding:38px 20px}.schedule-copy h2{font-size:30px;letter-spacing:1px}.schedule-details{grid-template-columns:1fr}.schedule-panel{padding:11px}.clinic-map-wide{height:300px}.practice-footer-top{grid-template-columns:1fr 1fr;gap:25px 18px}.practice-brand{grid-column:1/-1}.clinic-footer{padding:35px 20px 18px}.clinic-footer .copyright{align-items:flex-start;flex-direction:column;gap:8px}}
