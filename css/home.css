@@ -32,3 +32,11 @@
   .gallery-item figcaption b{font-size:15px}
   .gallery-item figcaption span{font-size:11px}
 }
+
+/* Homepage closing booking CTA */
+.home-booking-cta{margin:0 auto 88px;width:calc(100% - 11.5%);padding:48px 52px;background:var(--blue);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:40px}
+.home-booking-cta label{font-size:10px;letter-spacing:1.8px;font-weight:800;color:#a8d7ca}
+.home-booking-cta h2{font:800 clamp(30px,3.4vw,46px)/1.08 Manrope;letter-spacing:-1.5px;margin:9px 0 12px;max-width:700px}
+.home-booking-cta p{margin:0;color:#d9e6e9;max-width:610px;font-size:14px;line-height:1.6}
+.home-booking-cta .btn{flex:none}
+@media(max-width:700px){.home-booking-cta{width:calc(100% - 40px);margin-bottom:55px;padding:34px 24px;display:block}.home-booking-cta .btn{margin-top:24px;width:100%}}
