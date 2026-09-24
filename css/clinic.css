@@ -89,3 +89,107 @@
 .footer-socials{color:#8fa6b8!important}
 @media(max-width:1000px){.clinic-schedule{grid-template-columns:1fr;gap:28px;padding:40px 7%}.schedule-panel{max-width:none}.practice-footer-top{grid-template-columns:1fr 1fr;gap:30px}.clinic-map-wide{height:280px}}
 @media(max-width:700px){.clinic-schedule{padding:38px 20px}.schedule-copy h2{font-size:30px;letter-spacing:1px}.schedule-details{grid-template-columns:1fr}.schedule-panel{padding:11px}.clinic-map-wide{height:300px}.practice-footer-top{grid-template-columns:1fr 1fr;gap:25px 18px}.practice-brand{grid-column:1/-1}.clinic-footer{padding:35px 20px 18px}.clinic-footer .copyright{align-items:flex-start;flex-direction:column;gap:8px}}
+
+/* Final reference pass — map + practice footer */
+.clinic-map-wide{
+  width:100%;
+  height:228px !important;
+  position:relative;
+  margin:0 !important;
+  padding:0 !important;
+  overflow:hidden;
+  background:#e5e9e8;
+}
+.clinic-map-wide iframe{
+  display:block;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  border:0;
+  filter:none;
+}
+.clinic-footer{
+  width:100%;
+  background:#071c38 !important;
+  color:#d8e5e8;
+  padding:25px 4.8% 12px !important;
+  margin:0 !important;
+  border-radius:0 !important;
+}
+.practice-footer-top{
+  width:100%;
+  display:grid !important;
+  grid-template-columns:1.25fr 1.1fr 1fr 1.25fr !important;
+  gap:55px !important;
+  align-items:start;
+  padding:0 0 18px !important;
+}
+.practice-brand{align-items:flex-start}
+.practice-brand>strong{
+  font:800 12px Manrope;
+  color:#fff;
+  margin:0;
+}
+.practice-brand>span{
+  font-size:6px;
+  letter-spacing:1px;
+  color:#a7bac9;
+  margin-top:2px;
+}
+.practice-brand p{
+  max-width:220px;
+  margin:7px 0;
+  font-size:8px;
+  line-height:1.45;
+  color:#9fb2bf;
+}
+.practice-brand small{font-size:7px;color:#c1cfd6}
+.footer-column{gap:6px !important}
+.footer-column>b{
+  font-size:7px !important;
+  letter-spacing:1.2px;
+  color:#9eb2c2;
+  margin:0 0 5px !important;
+}
+.footer-column>a,
+.footer-column>span{
+  font-size:8px !important;
+  line-height:1.25;
+  color:#a9bac7 !important;
+}
+.footer-contact{gap:9px !important}
+.footer-contact small{
+  display:block;
+  font-size:6px;
+  letter-spacing:1px;
+  color:#7890a4;
+  margin-bottom:2px;
+}
+.footer-contact strong{
+  display:block;
+  font-size:7px;
+  line-height:1.25;
+  color:#fff;
+  font-weight:600;
+}
+.clinic-footer .copyright{
+  border-top:1px solid #ffffff14;
+  padding-top:10px;
+  margin:0;
+  font-size:7px;
+  color:#71889b;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+@media(max-width:1000px){
+ .clinic-map-wide{height:260px !important}
+ .practice-footer-top{grid-template-columns:1fr 1fr !important;gap:28px !important}
+}
+@media(max-width:700px){
+ .clinic-map-wide{height:280px !important}
+ .clinic-footer{padding:30px 20px 18px !important}
+ .practice-footer-top{grid-template-columns:1fr 1fr !important;gap:25px 18px !important}
+ .practice-brand{grid-column:1/-1}
+ .clinic-footer .copyright{align-items:flex-start;flex-direction:column;gap:8px}
+}
