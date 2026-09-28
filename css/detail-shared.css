@@ -1,1 +1,50 @@
 .detail-split,.detail-photo-band,.detail-bottom{transition:opacity .6s ease,transform .6s ease}.detail-split:not(.in-view),.detail-photo-band:not(.in-view),.detail-bottom:not(.in-view){opacity:.35;transform:translateY(18px)}.detail-split.in-view,.detail-photo-band.in-view,.detail-bottom.in-view{opacity:1;transform:none}
+/* Unified clinician/treatment detail-page refinement */
+.detail-hero{
+  border-bottom:1px solid var(--line);
+}
+.detail-hero>div{
+  padding:78px 9%;
+}
+.detail-hero h1{
+  max-width:680px;
+}
+.detail-hero .doctor-credentials{
+  color:var(--green);
+  font-weight:800;
+  margin:0 0 14px;
+}
+.detail-hero img{
+  min-height:560px;
+}
+.detail-split{
+  min-width:0;
+}
+.detail-split>div{
+  min-width:0;
+}
+.detail-split>img{
+  border-radius:12px;
+}
+.detail-steps>div{
+  align-items:flex-start;
+}
+.detail-steps b{
+  flex:0 0 24px;
+}
+.detail-bottom{
+  box-shadow:0 8px 28px #15344210;
+}
+@media(max-width:700px){
+  .detail-hero>div{padding:52px 20px}
+  .detail-hero img{min-height:350px;height:350px}
+  .detail-hero .intro-actions{align-items:stretch}
+  .detail-hero .intro-actions .btn{width:100%}
+  .detail-hero .intro-actions .text-link{text-align:center}
+  .detail-split>img{border-radius:8px}
+  .detail-bottom{width:100%;margin-left:0;margin-right:0}
+}
+@media(max-width:380px){
+  .detail-hero h1{font-size:38px}
+  .detail-hero>div{padding-left:16px;padding-right:16px}
+}
