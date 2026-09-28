@@ -34,3 +34,12 @@
 .doctor-cta .btn{white-space:nowrap}
 @media(max-width:1000px){.doctor-hero,.doctor-profile{grid-template-columns:1fr}.doctor-hero-photo{min-height:500px}.doctor-profile.reverse .doctor-profile-photo{order:initial}.doctor-profile.reverse .doctor-profile-copy{order:initial}.doctor-profile-photo img{min-height:500px}.doctor-intro{gap:45px}.doctor-profile-copy{padding:60px 8%}}
 @media(max-width:700px){.doctor-hero-copy{padding:58px 20px}.doctor-hero h1{letter-spacing:-2.5px}.doctor-hero-copy>p{font-size:16px}.doctor-hero-actions{align-items:flex-start;flex-direction:column;gap:16px}.doctor-hero-photo{min-height:360px}.doctor-hero-note{left:15px;bottom:15px}.doctor-intro{grid-template-columns:1fr;gap:25px}.doctor-profile-photo img{min-height:390px;height:390px}.doctor-profile-copy{padding:42px 20px 52px}.doctor-number{margin-bottom:30px}.doctor-profile-copy h2{font-size:36px}.doctor-cta{margin:60px 20px;padding:32px 24px;align-items:flex-start;flex-direction:column}.doctor-cta .btn{width:100%}}
+
+@media(max-width:700px){
+  .doctor-hero-actions .btn{width:100%}
+  .doctor-profile-copy .btn{width:100%}
+}
+@media(max-width:380px){
+  .doctor-hero h1{font-size:40px}
+  .doctor-profile-copy h2{font-size:32px}
+}
