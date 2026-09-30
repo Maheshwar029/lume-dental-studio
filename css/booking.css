@@ -18,3 +18,10 @@
   .booking-step h2{font-size:25px}
   .booking-summary{flex-direction:column;align-items:flex-start}
 }
+
+/* Conversion refinements */
+.booking-reassurance{border:1px solid var(--line);border-radius:10px;background:#fff}
+.booking-step h2{max-width:720px}
+.booking-step .choice-grid button:focus-visible,.booking-step .choice-list button:focus-visible,.slots button:focus-visible{outline:3px solid #8bcbb9;outline-offset:2px}
+.booking-success-card{max-width:680px;margin:auto;padding:20px 0}
+@media(max-width:700px){.booking-reassurance{padding:15px}.booking-benefits{gap:8px;flex-wrap:wrap}.booking-benefits span{font-size:11px}.booking-summary{position:sticky;bottom:68px;z-index:20}}
