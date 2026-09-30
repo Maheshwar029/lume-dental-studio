@@ -48,3 +48,115 @@
   .detail-hero h1{font-size:38px}
   .detail-hero>div{padding-left:16px;padding-right:16px}
 }
+
+/* Treatment detail information, FAQ and related-care sections */
+.detail-info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:56px;
+  padding:88px 9%;
+  border-top:1px solid var(--line);
+}
+.detail-info-grid>div{min-width:0}
+.detail-info-grid h2,.detail-faq h2,.detail-related h2{
+  max-width:640px;
+  margin:10px 0 18px;
+}
+.detail-info-grid p{max-width:620px;line-height:1.75}
+.detail-list{
+  margin:20px 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:16px;
+}
+.detail-list li{
+  position:relative;
+  padding:0 0 0 26px;
+  line-height:1.65;
+  color:var(--muted);
+}
+.detail-list li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.68em;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+}
+.detail-faq{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:56px;
+  padding:88px 9%;
+  border-top:1px solid var(--line);
+}
+.faq-list{display:grid;gap:10px}
+.faq-list details{
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  padding:0 20px;
+}
+.faq-list summary{
+  cursor:pointer;
+  list-style:none;
+  font-weight:800;
+  padding:21px 30px 21px 0;
+  position:relative;
+}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{
+  content:"+";
+  position:absolute;
+  right:0;
+  top:18px;
+  font-size:22px;
+  font-weight:500;
+}
+.faq-list details[open] summary::after{content:"−"}
+.faq-list details p{
+  margin:0;
+  padding:0 0 20px;
+  color:var(--muted);
+  line-height:1.7;
+}
+.detail-related{
+  padding:88px 9%;
+  background:var(--cream);
+}
+.related-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:30px;
+}
+.related-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  min-height:118px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  color:var(--ink);
+  text-decoration:none;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.related-card span{font-weight:800;line-height:1.35}
+.related-card b{color:var(--green);white-space:nowrap;font-size:13px}
+.related-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #15344210;border-color:#b9d3ca}
+@media(max-width:700px){
+  .detail-info-grid,.detail-faq{grid-template-columns:1fr;gap:34px;padding:58px 20px}
+  .detail-related{padding:58px 20px}
+  .related-grid{grid-template-columns:1fr}
+  .related-card{min-height:92px;padding:20px}
+}
+@media(max-width:380px){
+  .detail-info-grid,.detail-faq,.detail-related{padding-left:16px;padding-right:16px}
+  .faq-list details{padding-left:16px;padding-right:16px}
+}
